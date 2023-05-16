@@ -14,8 +14,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url("../images/candi-arjuna-dieng.jpg");
+    background-image: url("../images/candi-arjuna-dieng.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,11 +33,11 @@ header {
     align-items: center;
 }
 select {
+    font-size: 15.5px;
     color: #fff;
     border-color: transparent;
     margin-left: 40px;
     background-color: transparent;
-    font-size: 15.5px;
 }
 
 option {
@@ -96,7 +95,7 @@ header .hero {
 }
 
 header .hero h1 {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
 }
@@ -116,7 +115,6 @@ header .hero h1 {
     align-items: center;
     justify-content: center;
 }
-
 .about .box-about .box:nth-child(1) {
     padding-right: 30px;
 }
@@ -136,7 +134,8 @@ header .hero h1 {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    width: 600px;
+    width: 400px;
+    height: 450px;
 }
 
 /* destination style */
@@ -151,12 +150,12 @@ header .hero h1 {
     font-weight: 300;
     color: #fff;
     margin: 4rem auto 1rem;
-    width: 85%;
+    width: 70%;
     max-width: 1280px;
 }
 
 .slider {
-    width: 85%;
+    width: 50%;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -186,13 +185,13 @@ header .hero h1 {
 }
 
 .slider__item {
+    width: 200px;
+    height: 200px;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 150px;
-    height: 300px;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     overflow: hidden;
     position: relative;
     aspect-ratio: 1;
@@ -200,8 +199,8 @@ header .hero h1 {
 
 .slider__image {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 250px;
     -o-object-fit: cover;
     object-fit: cover;
     position: absolute;

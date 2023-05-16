@@ -18,8 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/Candi', function(){
-    return view('Candi');
+    return view('Candi_Arjuna');
 });
+
+Route::get('/Tuk_Bimalukar', function(){
+    return view('Tuk_Bimalukar');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

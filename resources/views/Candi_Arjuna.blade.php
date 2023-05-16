@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/candi.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Destinations | Temple Arjuna</title>
+    <title>Destinations | Arjuna Templer</title>
   </head>
   <body id="home">
     <header>
@@ -37,7 +37,7 @@
                 </li>
                 <li>
                   <i class="ri-dashboard-line"></i>
-                  <a href="{{ route('dashboard') }}">Home</a>
+                  <a href="gallery">Gallery</a>
                 </li>
                 <select onchange="location = this.value;">
                     <option value="Destination">Destination</option>
@@ -45,7 +45,7 @@
                     <option value="Kawah_Sikidang">Kawah Sikidang</option>
                     <option value="Bukit_Scooter">Bukit Scooter</option>
                     <option value="Telaga_Warna">Telaga Warna</option>
-                    <option value="Tuk Bimalukar">Tuk Bimalukar</option>
+                    <option value="Tuk_Bimalukar">Tuk Bimalukar</option>
                 </select>
               </ul>
             </div>
@@ -59,7 +59,7 @@
 
       <!-- hero -->
       <section class="hero">
-        <h1 class="animate__animated animate__pulse">Arjuna Temple</h1>
+        <h1 class="animate__animated animate__pulse">Candi Arjuna</h1>
       </section>
       <!-- hero -->
     </header>
@@ -69,16 +69,20 @@
       <div class="container">
         <div class="box-about">
           <div class="box" data-aos="fade-right" data-aos-duration="1000" data-aos-iteration="1">
-            <h1>Arjuna Temple</h1>
+            <h1>Candi Arjuna</h1>
             <p>
-                Arjuna Temple is one of the temple buildings in Arjuna Temple Complex, Dieng. Arjuna Temple is
-                 estimated to be the oldest temple, this temple is estimated to be built in the 8th century AD by
-                 the Sanjaya Dynasty of Ancient Mataram. In this complex there are also Semar Temple, Srikandi Temple,
-                  Puntadewa Temple, and Sembadra Temple.
+                Candi Arjuna sendiri merupakan salah satu candi Hindu dari garis keturunan Siwa.
+                 Candi ini juga dikatakan sebagai candi Hindu pertama di Jawa, dibangun sekitar abad ke-7
+                  pada masa pemerintahan kerajaan Mataram Kuno. Candi Arjuna diperkirakan sebagai candi tertua dan
+                  diperkirakan dibangun pada abad ke-8 Masehi oleh Dinasti Sanjayadari Mataram Kuno. Di kompleks ini
+                  juga terdapat Candi Semar, Candi Srikandi, Candi Puntadewa, dan Candi Sembadra. Di kelompok candi Arjuna
+                  ditemukan bekas-bekas pondasi, bangunan-bangunan, dan benda-benda yang bernilai sejarah kepubakalaan.
+                   Salah satu diantaranya yang ditemukan di belakang Candi Puntadewa adalah periuk bundar berkaki.
+                 Di kompleks ini juga pernah ditemukan inskripsi yang berangka tahun saka 731 atau 890 M2.
             </p>
           </div>
           <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-iteration="1">
-            <img src="./images/candi-arjuna-dieng.jpg" alt="" />
+            <img src="./images/candi2.jpg"  alt="" />
           </div>
         </div>
       </div>
@@ -86,7 +90,7 @@
     <!-- about -->
 
     <!-- destianion -->
-    <section class="destination" id="destination">
+    <section class="destination" id="gallery">
         <div class="slider" x-data="{start: true, end: false}">
             <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
               <div class="slider__item">
@@ -100,47 +104,12 @@
                 </div>
               </div>
               <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng.jpg" alt="Image">
+                <img class="slider__image" src="./images/candi1.jpg" alt="Image">
                 <div class="slider__info">
                 </div>
               </div>
               <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng-di-malam-hari.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng-di-malam-hari.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng-di-malam-hari.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng-di-malam-hari.jpg" alt="Image">
-                <div class="slider__info">
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="./images/candi-arjuna-dieng.jpg" alt="Image">
+                <img class="slider__image" src="./images/candi2.jpg" alt="Image">
                 <div class="slider__info">
                 </div>
               </div>
